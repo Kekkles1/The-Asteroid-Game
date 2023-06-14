@@ -1,22 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int health;
-
-    private BoxCollider2D collider;
-
-    // Start is called before the first frame update
-    void Start()
+    private Boolean touch=false;
+    public Animator animator;
+    void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        collider=GetComponent<BoxCollider2D>();
-    }
+        Enemy enemy = hitInfo.GetComponent<Enemy>();
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        if (enemy!= null )
+        {
+            animator.SetBool("Touch", true);
+        }
     }
 }

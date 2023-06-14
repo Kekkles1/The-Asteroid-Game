@@ -46,6 +46,8 @@ GameObject:
   - component: {fileID: -5276501560344409176}
   - component: {fileID: -381689016099700291}
   - component: {fileID: -1370862199797575567}
+  - component: {fileID: -6687874666696958306}
+  - component: {fileID: 1988282114265676223}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -61,7 +63,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7334096499660602574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.2440968, y: -1.1712564, z: 0}
+  m_LocalPosition: {x: -15.34, y: -4.79, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -234,3 +236,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef4cd2b644d5ee40a9eba36307afa7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6687874666696958306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7334096499660602574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2a5edad51570e4180e8881e1aeb2e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1988282114265676223}
+--- !u!95 &1988282114265676223
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7334096499660602574}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ebfa9b39d3326e4d912f4d9fc753329, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
