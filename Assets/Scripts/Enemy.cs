@@ -23,5 +23,10 @@ public class Enemy : MonoBehaviour
         health -= damage;
 
         animator.SetInteger("health", health);
+        if (health==0)
+        {
+            ScoreManager.instance.AddPoints();
+            animator.SetTrigger("Asteroid_Boom");
+        }
     }
 }
